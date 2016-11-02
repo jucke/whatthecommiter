@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+#
+# Date: 11 2016
+# Author: Jucke
+#
+# Description: 
+# Generates random commit message
+#
+# Usage: place under /usr/local/bin, 'chmod u+x wtc' to make executable and run `$ wtc`
+
+gitmsg=
+
+function fetchmsg(){
+	curl --silent http://whatthecommit.com/index.txt
+}
+
+function confirmmsg(){
+	OUTPUT="$(fetchmsg)"
+
+	read -r -p "${OUTPUT} [y/N] " response
+	case $response in
+	    [yY][eE][sS]|[yY]) 
+	        gitmsg="'${OUTPUT}'"
+	        execmsg
+	        ;;
+	    *)
+	        confirmmsg
+	        ;;
+	esac
+}
+
+function execmsg(){
+	msg="git commit -m "
+	msg+="'${OUTPUT}'"
+	eval $msg
+}
+
+confirmmsg
