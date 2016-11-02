@@ -15,7 +15,7 @@ Get a random commit message from [whatthecommit.com](http://whatthecommit.com) T
 
 ## How to use it
 
-Run `wtc` to fetch a randon message suggestion.
+Run `wtc` to fetch a random message suggestion.
 
 Type `y` to approve the message, it will run `git commit -m` with this message, i.e. `git commit -m "I forgot to commit... So here you go."` It doesn't stage files/execute any other git commands.
 
