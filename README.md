@@ -3,7 +3,7 @@
 ## Install
 
 - `git clone git@github.com:jucke/whatthecommitter.git`
-- place [`wtc`]() under /usr/local/bin directory
+- place [`wtc`](bin/wtc) under /usr/local/bin directory
 - use `chmod u+x wtc` to make it executable
 - run it by typing `wtc` in the terminal
 
