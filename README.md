@@ -11,7 +11,7 @@
 
 Get a random commit message from [whatthecommit.com](http://whatthecommit.com) Type `y` to approve and commit with this message.
 
-<img width="400" src="docs/img/whatthecommiter.png"/>
+<img width="600" src="docs/img/whatthecommiter.png"/>
 
 ## How to use it
 
