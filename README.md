@@ -2,9 +2,15 @@
 
 ## What it does
 
-Get a random commit message from [whatthecommit.com](http://whatthecommit.com) Type `y` to approve and commit with this message. Type `n` or press `enter` to generate another message. `Cmd + c` to stop.
+Gets random commit messages from [whatthecommit.com](http://whatthecommit.com) into your terminal window.
+
+Type `y` to approve and commit with this message. Type `n` or press `enter` to generate another message. `Cmd + c` to stop.
 
 <img width="600" src="docs/img/whatthecommiter.png"/>
+
+## Why do I need it?
+
+You probably don't. Nothing beats [writing your own commit messages](https://chris.beams.io/posts/git-commit/).
 
 ## Install
 
