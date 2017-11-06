@@ -3,7 +3,7 @@
 # Date: 11 2016
 # Author: Jucke
 #
-# Description: 
+# Description:
 # Generates random commit message
 #
 # Usage: place under /usr/local/bin, 'chmod u+x wtc' to make executable and run `$ wtc`
@@ -19,8 +19,7 @@ function confirmmsg(){
 
 	read -r -p "${OUTPUT} [y/N] " response
 	case $response in
-	    [yY][eE][sS]|[yY]) 
-	        gitmsg="'${OUTPUT}'"
+	    [yY][eE][sS]|[yY])
 	        execmsg
 	        ;;
 	    *)
@@ -31,7 +30,7 @@ function confirmmsg(){
 
 function execmsg(){
 	msg="git commit -m "
-	msg+="'${OUTPUT}'"
+	msg+="`printf "%q" $OUTPUT`"
 	eval $msg
 }
 
