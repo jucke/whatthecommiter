@@ -30,7 +30,7 @@ function confirmmsg(){
 
 function execmsg(){
 	msg="git commit -m "
-	msg+="`printf "%q" $OUTPUT`"
+	msg+=`printf %q "$OUTPUT"`
 	eval $msg
 }
 
